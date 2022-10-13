@@ -52,21 +52,34 @@
 
                 data() {
                     return {
-                        datas: [],
+                        datas: {
+                            name: 'Demo',
+                            text: '@bealei',
+                            datas: [
+                                { name: '随机密码1', path: './demos/a1/index.html' },
+                                { name: '随机密码2', path: './demos/a2/index.html' },
+                                { name: '随机密码3', path: './demos/index.html' },
+                                { name: '随机密码4', path: './demos/index.html' },
+                                { name: '随机密码5', path: './demos/index.html' },
+                                { name: '随机密码6', path: './demos/index.html' },
+                                { name: '随机密7', path: './demos/index.html' },
+                                { name: '随机密码', path: './demos/index.html' },
+                            ],
+                        },
                         color: ['text-success', 'text-danger', 'text-warning', 'text-info', 'text-primary'],
                     };
                 },
 
-                mounted() {
-                    // 这里一定要使用常量 const来引用this，不然可能会出现this指向问题
-                    const that = this;
-                    // 使用getjson读取数据;
-                    $.getJSON('./js/data.json', function (data) {
-                        // 将读取到的json数据赋值给rows
-                        that.datas = data.content;
-                        console.log('请求到的数据：', data);
-                    });
-                },
+                // mounted() {
+                //     // 这里一定要使用常量 const来引用this，不然可能会出现this指向问题
+                //     const that = this;
+                //     // 使用getjson读取数据;
+                //     $.getJSON('./js/data.json', function (data) {
+                //         // 将读取到的json数据赋值给rows
+                //         that.datas = data.content;
+                //         console.log('请求到的数据：', data);
+                //     });
+                // },
             });
         </script>
     </body>
