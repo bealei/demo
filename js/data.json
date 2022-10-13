@@ -1,0 +1,18 @@
+{
+    "status": "success",
+    "msg": "请求成功",
+    "content": {
+        "name": "Demo",
+        "text": "@bealei",
+        "datas": [
+            { "name": "随机密码1", "path": "./demos/a1/index.html" },
+            { "name": "随机密码2", "path": "./demos/a2/index.html" },
+            { "name": "随机密码3", "path": "./demos/index.html" },
+            { "name": "随机密码4", "path": "./demos/index.html" },
+            { "name": "随机密码5", "path": "./demos/index.html" },
+            { "name": "随机密码6", "path": "./demos/index.html" },
+            { "name": "随机密7", "path": "./demos/index.html" },
+            { "name": "随机密码", "path": "./demos/index.html" }
+        ]
+    }
+}
