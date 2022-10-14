@@ -7,20 +7,20 @@
         <link rel="stylesheet" href="./css/index.css" />
     </head>
     <body>
-        <div class="container" id="app">
-            <header class="text-center m-5 fs-1">{{datas.name}}</header>
-            <div class="row">
-                <div class="d-flex flex-wrap" id="main">
-                    <a
-                        :href="item.path"
-                        class="shadow p-4 mb-3 m-2 bg-body rounded text-decoration-none"
-                        v-for="(item, index) in datas.datas"
-                        :key="index"
-                        :class="color[index%5]"
-                        >{{item.name}}</a
-                    >
-                </div>
+        <div class="container bg-light" id="app">
+            <header class="text-center fs-1 p-5">{{datas.name}}</header>
+            <!-- <div class="row"> -->
+            <div class="d-flex flex-wrap m-4" id="main">
+                <a
+                    :href="item.path"
+                    class="shadow p-4 mb-3 m-2 bg-body rounded text-decoration-none"
+                    v-for="(item, index) in datas.datas"
+                    :key="index"
+                    :class="color[index%5]"
+                    >{{item.name}}</a
+                >
             </div>
+            <!-- </div> -->
             <div class="fixed-bottom text-center">{{datas.text}}</div>
         </div>
 
@@ -42,6 +42,9 @@
                                 { name: '随机密码3', path: './demos/index.html' },
                                 { name: '随机密码4', path: './demos/index.html' },
                                 { name: '随机密码5', path: './demos/index.html' },
+                                { name: '随机密码6', path: './demos/index.html' },
+                                { name: '随机密7', path: './demos/index.html' },
+                                { name: '随机密码', path: './demos/index.html' },
                                 { name: '随机密码6', path: './demos/index.html' },
                                 { name: '随机密7', path: './demos/index.html' },
                                 { name: '随机密码', path: './demos/index.html' },
