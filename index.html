@@ -9,8 +9,8 @@
     <body>
         <div class="container bg-light" id="app">
             <header class="text-center fs-1 p-5">{{datas.name}}</header>
-            <!-- <div class="row"> -->
-            <div class="d-flex flex-wrap m-4" id="main">
+
+            <div class="row d-flex flex-wrap m-4" id="main">
                 <a
                     :href="item.path"
                     class="shadow p-4 mb-3 m-2 bg-body rounded text-decoration-none"
@@ -20,7 +20,7 @@
                     >{{item.name}}</a
                 >
             </div>
-            <!-- </div> -->
+
             <div class="fixed-bottom text-center">{{datas.text}}</div>
         </div>
 
