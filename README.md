@@ -2,7 +2,8 @@
 
 #### 项目演示
 
- http://bealei.gitee.io/demo
+ https://bealei.gitee.io/demo
+ https://bealei.github.io/demo
 
 
 #### 仓库地址
