@@ -1,0 +1,37 @@
+body {
+	background-color: #f3f6f9;
+}
+
+#app {
+	height: 100vh;
+}
+
+#main {
+	border-top: 1px solid #ccc;
+	padding-top: 50px;
+}
+
+#main a {
+	border: 1px solid transparent;
+	transition: all .2s ease-out;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+		-10px -10px 20px rgba(255, 255, 255, 1);
+	transition: all .2s ease-out;
+}
+
+
+
+
+
+
+#main a:hover {
+	border: 1px solid #ddd;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2),
+		0 0 0 rgba(255, 255, 255, 0.8),
+		inset 10px 10px 20px rgba(0, 0, 0, 0.1),
+		inset -10px -10px 20px rgba(255, 255, 255, 1);
+	
+	
+	
+	
+}
