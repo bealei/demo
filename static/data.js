@@ -18,8 +18,8 @@ var datajson = {
 		"path": "./pages/UI主题配色/index.html"
 	},
 	{
-		"name": "测试宽度",
-		"path": "./pages/测试宽度/index.html"
+		"name": "测试宽度992",
+		"path": "./pages/测试宽度992/index.html"
 	},
 	{
 		"name": "调色器",
