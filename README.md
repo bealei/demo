@@ -38,11 +38,25 @@ git@github.com:bealei/demo.git
 2.  xxxx
 3.  xxxx
 
-#### 使用说明
+### 一键推送
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```shell
+# 查看仓库
+git remote -v
+
+
+# 将项目添加到本地暂存区
+git add .
+
+
+# 将项目提交到 本地Git仓库，并附上注释
+git commit -m "Initial commit"
+
+
+# 本地仓库推送到远程仓库
+git push origin
+
+```
 
 #### 参与贡献
 
