@@ -6,7 +6,7 @@ var datajson = {
 		"path": "./pages/24色环配色/index.html"
 	},
 	{
-		"name": "a2",
+		"name": "a22",
 		"path": "./pages/a2/index.html"
 	},
 	{
