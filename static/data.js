@@ -6,8 +6,8 @@ var datajson = {
 		"path": "./pages/24色环配色/index.html"
 	},
 	{
-		"name": "a2233",
-		"path": "./pages/a2/index.html"
+		"name": "计时器",
+		"path": "./pages/计时器/index.html"
 	},
 	{
 		"name": "md5加密",

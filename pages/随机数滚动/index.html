@@ -3,13 +3,30 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>JS随机数</title>
+	<title>JS随机数抽奖</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./css/bootstrap-5.2.0.min.css">
 	<script src="./js/index.js"></script>
 	<style>
 		body {
 			background-color: #e9ecef;
+		}
+
+		@property --ms {
+			syntax: '<integer>';
+			inherits: false;
+			initial-value: 0;
+		}
+
+
+		#result {
+			animation: aa 10s infinite steps(100, end);
+		}
+
+		@keyframes aa {
+			to {
+				--ms: 100;
+			}
 		}
 	</style>
 </head>

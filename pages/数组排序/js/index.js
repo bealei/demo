@@ -1,5 +1,5 @@
 
-
+// 洗牌算法（推荐）
 function random() {
   var start = parseInt(document.querySelector('#start').value);
   var end = parseInt(document.querySelector('#end').value);

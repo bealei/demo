@@ -4,15 +4,16 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./static/css/bootstrap.css" />
 	<link rel="stylesheet" href="./static/css/index.css" />
 </head>
 
 <body>
 	<div class="container" id="app">
-		<header class="text-center fs-1 pt-5">{{datas.name}}</header>
+		<header class=" text-center fs-1 pt-5">{{datas.name}}</header>
 
-		<div class="d-flex flex-wrap m-4" id="main">
+		<div class="row d-flex flex-wrap m-4" id="main">
 			<!-- <a :href="item.path" class=" p-4 mb-3 m-2 bg-body rounded text-decoration-none"
 				v-for="(item, index) in datas.datas" :key="index" :class="color[index%5]">{{item.name}}</a> -->
 
@@ -21,7 +22,7 @@
 				v-for="(item, index) in datas.datas" :key="index" :style="{color:color[index]}">{{item.name}}</a> -->
 
 			<!-- 随机渐变色 -->
-			<a :href="item.path" class=" p-4 mb-3 m-2 bg-body rounded text-decoration-none"
+			<a :href="item.path" class="col-auto p-4 mb-3 m-2 bg-body rounded text-decoration-none"
 				v-for="(item, index) in datas.datas" :key="index" :style="{backgroundImage:color[index]}"
 				style="color: transparent;-webkit-background-clip: text;">{{item.name}}</a>
 
