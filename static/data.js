@@ -34,8 +34,8 @@ var datajson = {
 		"path": "./pages/随机密码/index.html"
 	},
 	{
-		"name": "随机数",
-		"path": "./pages/随机数/index.html"
+		"name": "数组排序",
+		"path": "./pages/数组排序/index.html"
 	},
 	{
 		"name": "随机数",
