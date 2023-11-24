@@ -39,7 +39,7 @@ function random() {
   // console.log(arr);
   // console.log('map-->', map);
   // document.querySelector('#result').innerHTML = arr;
-  document.querySelector('#result').innerHTML = maps;
+  document.querySelector('#res').innerHTML = maps;
 }
 
 
