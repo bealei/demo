@@ -18,10 +18,6 @@ var datajson = {
 		"path": "./pages/UI主题配色/index.html"
 	},
 	{
-		"name": "测试宽度992",
-		"path": "./pages/测试宽度992/index.html"
-	},
-	{
 		"name": "调色器",
 		"path": "./pages/调色器/index.html"
 	},
@@ -38,20 +34,24 @@ var datajson = {
 		"path": "./pages/数组排序/index.html"
 	},
 	{
-		"name": "随机数",
-		"path": "./pages/随机数/index.html"
+		"name": "数组排序2",
+		"path": "./pages/数组排序2/index.html"
 	},
 	{
 		"name": "随机数",
 		"path": "./pages/随机数/index.html"
 	},
 	{
-		"name": "随机数",
-		"path": "./pages/随机数/index.html"
+		"name": "随机数滚动",
+		"path": "./pages/随机数滚动/index.html"
 	},
 	{
-		"name": "随机数",
-		"path": "./pages/随机数/index.html"
+		"name": "测试",
+		"path": "./pages/测试/index.html"
+	},
+	{
+		"name": "测试",
+		"path": "./pages/测试/index.html"
 	}
 	]
 }

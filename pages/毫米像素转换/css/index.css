@@ -1,22 +1,33 @@
-
-
-#app{
-	width: 1050px;
-	height: 1000px;
-	margin: 0 auto;
-	background-color: #fffae8;
+body {
+	background-color: #f1f2f3;
 }
 
-#res{
-	color: #ff0000;
-	font-weight: 900;
-	font-size: 50px;
+
+.box {
+	/* border: 1px solid red; */
 }
 
-#btn{
-	width: 50px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	background-color: aqua;
+
+label {
+	font-weight: 700;
+}
+
+p {
+	color: #bb1994;
+}
+
+
+footer {
+	/* border: 1px solid red; */
+	color: #336699;
+
+}
+
+footer p {
+	color: #336699;
+}
+
+footer a {
+	text-decoration: none;
+	color: #336699;
 }
