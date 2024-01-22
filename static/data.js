@@ -46,8 +46,8 @@ var datajson = {
 		"path": "./pages/随机数滚动/index.html"
 	},
 	{
-		"name": "测试",
-		"path": "./pages/测试/index.html"
+		"name": "副班随机宿舍",
+		"path": "./pages/副班随机宿舍/index.html"
 	},
 	{
 		"name": "测试",

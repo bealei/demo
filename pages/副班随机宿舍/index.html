@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JS随机数</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/bootstrap-5.2.0.min.css">
+
+	<script src="./js/index.js"></script>
+	<style>
+		body {
+			background-color: #f1f2f3;
+		}
+
+		span {
+			display: inline-block;
+		}
+
+		.name {
+
+			width: 50px;
+			text-align: justify;
+			text-justify: inter-ideograph;
+			text-align-last: justify;
+		}
+
+		.res {
+			width: 100px;
+		}
+
+		footer a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container" id="app">
+		<div class="box text-center py-5">
+			<h1 class="display-5 fw-bold text-success m-5">副班随机抽取宿舍</h1>
+			<button type="button" class="btn btn-outline-primary mb-5" onclick="random()">
+				点击获取结果
+			</button>
+			<p v-for="(item,index) in datas" :key="index">
+				<span class="name">{{item.name}}</span>
+				<span class="res text-danger" :id="item.id"> &nbsp;</span>
+			</p>
+		</div>
+
+		<footer class="position-fixed start-0 bottom-0 w-100 text-center">
+			<p class="text-center ">&copy; <a href="//www.zhuanglei.top">zhuanglei.top</a></p>
+		</footer>
+	</div>
+
+	<script src="./js/vue-2.6.12.min.js"></script>
+	<script src="./js/datajson.js"></script>
+	<script>
+		Vue.config.productionTip = false; //阻止 vue 在启动时生成生产提示。
+		new Vue({
+			el: '#app',
+
+			data() {
+				return {
+					datas: res.content,
+
+				};
+			},
+
+
+		});
+	</script>
+
+</body>
+
+</html>

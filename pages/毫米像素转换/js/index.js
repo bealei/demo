@@ -1,14 +1,4 @@
-const {
-	createApp
-} = Vue
 
-createApp({
-	data() {
-		return {
-			res: 'Hello Vue!'
-		}
-	}
-}).mount('#app')
 
 
 var btn = document.getElementById('btn');
