@@ -7,4 +7,12 @@ function random() {
 	var num = min + Math.round(rand * range);
 	// var nums = min + Math.round(Math.random() * (max-min));
 	document.getElementById('result').innerHTML = num;
+
+}
+
+
+function reset() {
+	document.getElementById('min').value = '';
+	document.getElementById('max').value = '';
+	document.getElementById('result').innerHTML = '结果'
 }
