@@ -50,8 +50,8 @@ var datajson = {
 		"path": "./pages/副班随机宿舍/index.html"
 	},
 	{
-		"name": "测试",
-		"path": "./pages/测试/index.html"
+		"name": "一言",
+		"path": "./pages/一言/index.html"
 	},
 	{
 		"name": "测试",
