@@ -1,0 +1,26 @@
+.bg {
+  width: 600px;
+  height: 1000px;
+  position: relative;
+}
+.bg img {
+  position: absolute;
+  height: 100%;
+  width: 600px;
+}
+
+.card {
+  left: 10%;
+  top: 10%;
+  border: 5px solid #fff;
+  border-radius: 10%;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  text-align: center;
+}

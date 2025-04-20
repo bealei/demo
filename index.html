@@ -1,113 +1,102 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./static/css/bootstrap.css" />
+    <link rel="stylesheet" href="./static/css/index.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<title>demo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./static/css/bootstrap.css" />
-	<link rel="stylesheet" href="./static/css/index.css" />
-</head>
+  <body>
+    <div class="container py-5" id="app">
+      <header class="text-center fs-1 py-5">{{datas.name}}</header>
 
-<body>
-	<div class="container py-5" id="app">
-		<header class=" text-center fs-1 py-5">{{datas.name}}</header>
-
-		<main class="row  py-5  text-center" id="main">
-			<!-- <a :href="item.path" class=" p-4 mb-3 m-2 bg-body rounded text-decoration-none"
+      <main class="row py-5 text-center" id="main">
+        <!-- <a :href="item.path" class=" p-4 mb-3 m-2 bg-body rounded text-decoration-none"
 				v-for="(item, index) in datas.datas" :key="index" :class="color[index%5]">{{item.name}}</a> -->
 
-			<!-- 随机颜色 -->
-			<div class="col-12 col-md-4 col-lg-3 p-3 p-sm-4" v-for="(item, index) in datas.datas" :key="index">
-				<!-- rounded -->
-				<a :href="item.path" class="p-3 d-block text-decoration-none" :style="{color:color[index]}">{{item.name}}</a>
-			</div>
+        <!-- 随机颜色 -->
+        <div
+          class="col-12 col-md-4 col-lg-3 p-3 p-sm-4"
+          v-for="(item, index) in datas.datas"
+          :key="index"
+        >
+          <!-- rounded -->
+          <a
+            :href="item.path"
+            class="p-3 d-block text-decoration-none"
+            :style="{}"
+            @mouseover="setRandomBorderColor($event)"
+            @mouseout="resetBorderColor($event)"
+            >{{item.name}}</a
+          >
 
+          <!-- <a
+					:href="item.path"
+					class="p-3 d-block text-decoration-none"
+					:style="{color:color[index]}"
+					>{{item.name}}</a
+				> -->
 
-			<!-- 随机渐变色 -->
-			<!-- <a :href="item.path" class="col-auto p-4 mb-3 m-2 bg-body rounded text-decoration-none"
+          <!-- <a
+            :href="item.path"
+            class="p-3 d-block text-decoration-none"
+            :style="{border:1px solid color[index]}"
+            >{{item.name}}</a
+          > -->
+        </div>
+
+        <!-- 随机渐变色 -->
+        <!-- <a :href="item.path" class="col-auto p-4 mb-3 m-2 bg-body rounded text-decoration-none"
 				v-for="(item, index) in datas.datas" :key="index" :style="{backgroundImage:color[index]}"
 				style="color: transparent;-webkit-background-clip: text;">{{item.name}}</a>-->
+      </main>
 
-		</main>
+      <div class="fixed-bottom text-center">{{datas.text}}</div>
+    </div>
 
-		<div class="fixed-bottom text-center">{{datas.text}}</div>
-	</div>
+    <script src="./static/data.js"></script>
+    <script src="./static/js/jquery3.2.1.min.js"></script>
+    <script src="./static/js/vue2.6.14.min.js"></script>
 
-	<script src="./static/data.js"></script>
-	<script src="./static/js/jquery3.2.1.min.js"></script>
-	<script src="./static/js/vue2.6.14.min.js"></script>
+    <script>
+      Vue.config.productionTip = false; //阻止 vue 在启动时生成生产提示。
+      new Vue({
+        el: "#app",
 
-	<script>
-		const len = datajson.datas.length;
-		const colors = [];
+        data() {
+          return {
+            datas: datajson,
+            // color: ['text-success', 'text-danger', 'text-warning', 'text-info', 'text-primary'],
+            // color: colors,
+            // color: colors,
+          };
+        },
 
+        methods: {
+          getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 3; i++) {
+              // 生成 50 到 200 之间的随机数，并转换为十六进制
+              var value = Math.floor(Math.random() * 151) + 50;
+              color += value.toString(16).padStart(2, "0");
+            }
+            return color;
+          },
 
-
-
-		// 随机渐变色
-		function generateRandomColor() {
-			// var r = Math.floor(Math.random() * 256);
-			// var g = Math.floor(Math.random() * 256);
-			// var b = Math.floor(Math.random() * 256);
-			// return "rgb(" + r + ", " + g + ", " + b + ")";
-
-			var letters = '0123456789ABCDEF';
-			var color = '#';
-			for (var i = 0; i < 6; i++) {
-				color += letters[Math.floor(Math.random() * 16)];
-			}
-			return color;
-		}
-		function generateGradient() {
-			var color1 = generateRandomColor(); var color2 = generateRandomColor();
-			var gradient = "linear-gradient(to right, " + color1 + ", " + color2 + ")";
-			return gradient;
-		}
-		// 随机渐变色
-		for (var i = 0; i < len; i++) {
-			generateRandomColor()
-			generateGradient()
-			// colors.push(generateGradient());
-		}
-
-		// 随机颜色
-		for (var i = 0; i < len; i++) {
-			var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-			colors.push(randomColor);
-		}
-
-		console.log(datajson.datas.length);
-		console.log(colors);
-
-
-
-
-
-
-		Vue.config.productionTip = false; //阻止 vue 在启动时生成生产提示。
-		new Vue({
-			el: '#app',
-
-			data() {
-				return {
-					datas: datajson,
-					// color: ['text-success', 'text-danger', 'text-warning', 'text-info', 'text-primary'],
-					color: colors,
-				};
-			},
-
-
-
-		});
-
-
-
-
-
-
-	</script>
-
-</body>
-
+          setRandomBorderColor(event) {
+            const randomColor = this.getRandomColor();
+            event.target.style.borderColor = randomColor;
+            event.target.style.color = randomColor;
+          },
+          resetBorderColor(event) {
+            event.target.style.borderColor = "transparent";
+            // event.target.style.color = "#000";
+          },
+        },
+      });
+    </script>
+  </body>
 </html>

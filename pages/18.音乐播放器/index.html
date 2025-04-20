@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./static/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="songCard">
+        <div class="songCardContent">
+          <div class="songPointer"></div>
+          <div class="songDisc">
+            <img class="songImg" src="./static/img/1111.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- 添加音乐播放器的footer -->
+      <footer class="music-player">
+        <button id="prev">上一曲</button>
+        <button id="playPause">播放/暂停</button>
+        <button id="next">下一曲</button>
+        <input
+          type="range"
+          id="progress"
+          min="0"
+          max="100"
+          value="0"
+          class="progress-bar"
+        />
+        <input
+          type="range"
+          id="volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+          class="volume-bar"
+        />
+      </footer>
+    </div>
+
+    <audio id="audioPlayer" src="./static/mp3/她说 - 林俊杰.mp3"></audio>
+
+    <script>
+      const audioPlayer = document.getElementById("audioPlayer");
+      const playPauseButton = document.getElementById("playPause");
+      const progressSlider = document.getElementById("progress");
+      const volumeSlider = document.getElementById("volume");
+      // 更新进度条
+      audioPlayer.addEventListener("timeupdate", () => {
+        const progress = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+        progressSlider.value = progress;
+      });
+
+      // 拖动进度条时更新播放时间
+      progressSlider.addEventListener("input", () => {
+        const time = (progressSlider.value / 100) * audioPlayer.duration;
+        audioPlayer.currentTime = time;
+      });
+
+      // 播放/暂停按钮
+      playPauseButton.addEventListener("click", () => {
+        if (audioPlayer.paused) {
+          audioPlayer.play();
+          playPauseButton.textContent = "暂停";
+        } else {
+          audioPlayer.pause();
+          playPauseButton.textContent = "播放";
+        }
+      });
+      // 音量控制
+      volumeSlider.addEventListener("input", () => {
+        audioPlayer.volume = volumeSlider.value;
+      });
+    </script>
+  </body>
+</html>

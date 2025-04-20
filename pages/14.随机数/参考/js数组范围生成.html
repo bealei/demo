@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>js数组范围生成</title>
+	</head>
+	<body>
+		<input type="" name="" id="start" value="" />
+		<input type="" name="" id="end" value="" />
+		<button type="button">生成</button>
+		<h1></h1>
+		<script type="text/javascript">
+			document.querySelector('button').onclick = function() {
+				var start = parseInt(document.querySelector('#start').value);
+				var end = parseInt(document.querySelector('#end').value);
+				var num = end - start + 1;
+				console.log(num)
+				var arr = [];
+				for (var i = 0; i < num; i++) {
+					arr[i] = start++;			
+				}
+				console.log(arr);
+				document.querySelector('h1').innerHTML = arr;
+			}
+		</script>
+	</body>
+</html>

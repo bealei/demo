@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+
+	<div class="container" id="app">
+
+		<h1>配色</h1>
+
+
+		<div class="module" v-for="(item, index) in datas.content" :key="index">
+			<!-- 模块标题 -->
+			<p>{{item.name}}</p>
+			<div class="module-content">
+				<div class="wrap" v-for="(item, index) in item.data" :key="index">
+					<!-- 颜色展示 -->
+					<div class="color-box" :style="{backgroundColor:item.text}"></div>
+					<!-- 颜色值 -->
+					<input class="text" type="text" :value="item.text">
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+</body>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/vue-2.6.12.min.js"></script>
+<script src="./js/datajson.js"></script>
+<script type="text/javascript">
+	Vue.config.productionTip = false; //阻止 vue 在启动时生成生产提示。
+	new Vue({
+		el: '#app',
+
+		data() {
+			return {
+				datas: datajson,
+
+			};
+		},
+
+
+	});
+</script>
+
+</html>

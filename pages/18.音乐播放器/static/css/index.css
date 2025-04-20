@@ -1,0 +1,120 @@
+:root {
+  --song-Card: 400px;
+  --song-Img: 250px;
+  --song-Disc: calc(var(--song-Img) / 0.66);
+  --song-Pointer: calc(var(--song-Img) * 0.75);
+  --song-Text: 50px;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(0deg, #121818, #243c3c);
+}
+
+.container {
+  margin: 0 30px;
+  border: 1px solid red;
+  position: relative;
+  height: 100vh;
+}
+.songCard {
+  height: 50vh;
+  padding: 200px;
+}
+.songCardContent {
+  width: 400px;
+  /* height: 900px; */
+  border: 1px solid transparent;
+  /* display: block; */
+  position: relative;
+}
+.songPointer {
+  /* border: 1px solid red; */
+  width: var(--song-Pointer);
+  height: 100px;
+  /* height: var(--song-Pointer); */
+  background-image: url("../img/未标题-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 2;
+  /* 旋转45度 */
+  /* transform: rotate(40deg);  */
+  /* 设置旋转中心为左上角 */
+  transform-origin: 20px 20px;
+  /* 添加过渡动画 */
+  transition: transform 0.3s ease;
+}
+.songPointer:hover {
+  cursor: pointer;
+  /* 旋转45度 */
+  transform: rotate(40deg);
+}
+.songDisc {
+  margin: 90px auto;
+  position: relative;
+  width: var(--song-Disc);
+  height: var(--song-Disc);
+  background-image: url("../img/网易云黑胶背景图.png");
+  background-size: var(--song-Disc) var(--song-Disc);
+}
+.songDisc img {
+  position: absolute;
+  width: var(--song-Img);
+  height: var(--song-Img);
+  border-radius: 50%;
+  top: 60px;
+  left: 60px;
+  z-index: -1;
+  animation: rotate 10s linear infinite; /* 添加动画 */
+}
+/* 定义旋转动画 */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* 隐藏range控件默认样式 */
+[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  outline: 0;
+  background-color: transparent;
+  width: 500px;
+}
+
+/* 定义range控件轨道的样式 */
+[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #eee;
+}
+
+/* 定义range控件容器的样式 */
+[type="range" i]::-webkit-slider-container {
+  height: 20px;
+  overflow: hidden;
+  background: linear-gradient(to right, #ade76b, #f44336);
+}
+
+/* 定义range控件拇指的样式 */
+[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f44336;
+  background-color: #1994ff;
+  border: 1px solid transparent;
+  margin-top: -8px;
+  /* 使用border-image属性给拇指添加渐变边框 */
+  /* border-image: linear-gradient(to right, #ccc, #f44336) 0 fill / 8 20 8 0 / 0px
+    0px 0 600px; */
+}
