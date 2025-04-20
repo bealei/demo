@@ -1,0 +1,106 @@
+/* 核酸采样记录 */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eef0f5;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+
+    background-image: linear-gradient(180deg, #dff0ff, #eef0f5);
+    /* min-height: 100vh; */
+    overflow: hidden;
+    font-weight: 500;
+}
+
+header {
+    padding: 20px 43px;
+    box-sizing: border-box;
+    height: 250px;
+
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.info {
+    width: 500px;
+    height: 150px;
+    /* border: 1px red solid; */
+    position: absolute;
+    bottom: 0px;
+    left: 43px;
+}
+
+.infotop {
+    height: 80px;
+    line-height: 80px;
+    /* border: 1px solid green; */
+}
+
+.yj1 {
+    /* margin-top: 10px; */
+    float: left;
+    width: 64px;
+    height: 64px;
+
+    /* background-color: #008000; */
+    /* border: 1px solid skyblue; */
+    background: url(../img/yj-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.yj2 {
+    /* margin-top: 10px; */
+    float: left;
+    width: 64px;
+    height: 64px;
+    display: none;
+
+    background: url(../img/yj-2.jpg);
+
+    background-size: 100%;
+}
+
+.xm {
+    font-size: 60px;
+    color: #1f1f1f;
+    font-weight: 500;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    /* color: red; */
+}
+
+.sfzhm {
+    margin-top: 12px;
+    padding-left: 10px;
+    font-size: 60px;
+    /* font-size: 44px; */
+    font-weight: 500;
+    color: #636476;
+    /* color: red; */
+}
+
+/* 476 */
+main img {
+    width: 980px;
+    display: block;
+}
+
+main p {
+    font-size: 64px;
+    width: 640px;
+    text-align: center;
+    margin: 0 auto;
+}

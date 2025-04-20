@@ -1,0 +1,148 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Sans-serif;
+	list-style: none;
+	text-decoration: none;
+	font-style: normal;
+}
+
+
+
+body {
+	background-color: #000;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+	background-color: #eef0f5;
+	overflow: hidden;
+}
+
+
+header,
+footer {
+	padding: 20px 43px;
+	box-sizing: border-box;
+}
+
+header {
+	height: 572px;
+	margin-bottom: 50px;
+	background-image: linear-gradient(180deg, #c9f6e3, #fff);
+	position: relative;
+}
+
+header img {
+	width: 600px;
+	position: absolute;
+	top: -40px;
+	right: -80px;
+}
+
+header>span {
+	position: absolute;
+	top: 220px;
+	left: 43px;
+	color: #26282e;
+	font-size: 64px;
+}
+
+.info {
+	width: 500px;
+	height: 150px;
+	/* border: 1px red solid; */
+	position: absolute;
+	top: 370px;
+	left: 43px;
+}
+
+.infotop {
+	height: 70px;
+	line-height: 70px;
+	/* border: 1px solid green; */
+}
+
+
+
+.xm {
+	font-size: 60px;
+	color: #1f1f1f;
+	font-weight: 500;
+	margin-left: 15px;
+	letter-spacing: 2px;
+	/* color: red; */
+}
+
+.sfzhm {
+	margin-top: 12px;
+	padding-left: 10px;
+	font-size: 35px;
+	/* font-size: 44px; */
+	font-weight: 700;
+	color: #636476;
+	/* color: red; */
+}
+
+
+
+
+
+
+
+
+
+
+main ul {
+	background: #fff;
+	height: 770px;
+	color: #525666;
+	margin-bottom: 50px;
+	padding: 43px 43px 10px;
+}
+
+main li {
+	border-bottom: 2px solid #d2d2d3;
+	height: 140px;
+	line-height: 140px;
+	font-size: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* 需要有边框,不然会变形 */
+main li i {
+	border: 1px solid transparent;
+	color: #26282e;
+}
+
+main li:nth-child(1) {
+	font-size: 55px;
+	font-weight: 700;
+	color: #26282e;
+}
+
+main li:nth-child(1) i {
+	font-family: "宋体";
+}
+
+
+
+footer {
+	padding-bottom: 100px;
+}
+
+
+footer p {
+	color: #62667a;
+	font-size: 42px;
+
+}
+
+footer p:nth-child(1) {
+	color: #27282e;
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}

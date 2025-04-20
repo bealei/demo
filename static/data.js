@@ -3,6 +3,10 @@ var datajson = {
   text: "@bealei",
   datas: [
     {
+      name: "0.健康码",
+      path: "./pages/0.健康码/index.html",
+    },
+    {
       name: "1.24色环配色",
       path: "./pages/1.24色环配色/index.html",
     },
@@ -74,16 +78,12 @@ var datajson = {
     },
 
     {
-      name: "0.测试",
-      path: "./pages/0.测试/index.html",
+      name: "测试",
+      path: "./pages/测试/index.html",
     },
     {
-      name: "0.测试",
-      path: "./pages/0.测试/index.html",
-    },
-    {
-      name: "0.测试",
-      path: "./pages/0.测试/index.html",
+      name: "测试",
+      path: "./pages/测试/index.html",
     },
   ],
 };

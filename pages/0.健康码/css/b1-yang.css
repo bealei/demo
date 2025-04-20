@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    font-family: Sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    background-color: #eef0f5;
+    overflow: hidden;
+}
+
+header,
+footer {
+    padding: 20px 43px;
+    box-sizing: border-box;
+}
+
+header {
+    height: 830px;
+    margin-bottom: 50px;
+
+    background-color: #fbe8e4;
+    background-image: linear-gradient(180deg, #fbe8e4, #fff);
+    position: relative;
+}
+
+header img {
+    width: 600px;
+    position: absolute;
+    top: -100px;
+    right: -150px;
+}
+
+header > span {
+    position: absolute;
+    top: 280px;
+    left: 70px;
+    color: #26282e;
+    font-size: 64px;
+}
+
+.info {
+    width: 500px;
+    height: 150px;
+    /* border: 1px red solid; */
+    position: absolute;
+    top: 420px;
+    left: 50px;
+}
+
+.infotop {
+    height: 70px;
+    line-height: 70px;
+    /* border: 1px solid green; */
+}
+
+.yj1 {
+    /* margin-top: 10px; */
+    float: left;
+    width: 64px;
+    height: 64px;
+
+    /* background-color: #008000; */
+    /* border: 1px solid skyblue; */
+    background: url(../img/yj-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.yj2 {
+    /* margin-top: 10px; */
+    float: left;
+    width: 64px;
+    height: 64px;
+    display: none;
+
+    background: url(../img/yj-2.jpg);
+
+    background-size: 100%;
+}
+
+.xm {
+    float: left;
+    font-size: 56px;
+    font-size: 60px;
+    color: #1f1f1f;
+    font-weight: 500;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    /* color: red; */
+}
+
+.sfzhm {
+    margin-top: 12px;
+    padding-left: 10px;
+    font-size: 35px;
+    /* font-size: 44px; */
+    font-weight: 700;
+    color: #636476;
+    /* color: red; */
+}
+
+header a {
+    position: absolute;
+    bottom: 50px;
+    width: 414px;
+    height: 113px;
+    display: block;
+    line-height: 113px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #3858e6;
+    border: 5px solid #3858e6;
+    border-radius: 60px;
+}
+
+header a:first-child {
+    /* right: 56px; */
+}
+
+header a:last-child {
+    right: 56px;
+}
+
+main ul {
+    background: #fff;
+    height: 770px;
+    color: #525666;
+    margin-bottom: 50px;
+    padding: 43px 43px 10px;
+}
+
+main li {
+    border-bottom: 2px solid #d2d2d3;
+    padding: 35px 0;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main li span {
+    text-align: right;
+    color: #26282e;
+    width: 580px;
+}
+/* 第一行标题 */
+main li:nth-child(1) {
+    display: block;
+}
+/* 图标 */
+main li:nth-child(1) i {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    background: url(../img/danger.jpg);
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+main li:nth-child(1) span {
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    /* text-align: left; */
+}
+main li:nth-child(1) p {
+    margin-top: 20px;
+    color: #dc7b7b;
+    font-size: 40px;
+}
+
+/* 输入框 */
+main li input {
+    width: 580px;
+    text-align: right;
+    color: #26282e;
+    font-size: 50px;
+    border: 0;
+    outline: 0 none;
+}
+
+footer {
+    padding-bottom: 50px;
+}
+
+footer p {
+    color: #62667a;
+    font-size: 42px;
+}
+
+footer p:nth-child(1) {
+    color: #27282e;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

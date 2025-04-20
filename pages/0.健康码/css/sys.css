@@ -1,0 +1,214 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-style: normal;
+	font-family: Sans-serif;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: #000;
+}
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+	background-color: #eef0f5;
+	background-image: linear-gradient(180deg, #dff0ff, #eef0f4, #eef0f5);
+	/* font-size: 56px; */
+	padding: 60px 50px;
+	min-height: 100vh;
+}
+
+
+header {
+
+	background-color: #fff;
+	border-radius: 60px;
+	padding: 60px 50px;
+
+}
+
+header li {
+	display: flex;
+
+	/* border: 1px solid red; */
+
+}
+
+header li:nth-child(1) {
+	justify-content: space-between;
+	min-height: 80px;
+	margin-bottom: 30px;
+}
+
+/* 第一行左边文字 */
+header li:nth-child(1) textarea {
+	font-size: 64px;
+	font-size: 56px;
+	font-weight: 600;
+	height: 80px;
+	width: 520px;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0 none;
+}
+
+/* 第一行右边提示 */
+header li:nth-child(1) div {
+	width: 198px;
+	height: 54px;
+	border: 2px solid #88e9bc;
+	background-color: #daf9ea;
+	color: #369e67;
+	font-size: 30px;
+	padding-top: 3px;
+	margin-top: 10px;
+	border-radius: 5px;
+	box-sizing: border-box;
+
+}
+
+header li:nth-child(1) div:nth-child(2) * {
+	vertical-align: middle;
+	align-items: center;
+
+}
+
+/* 第一行图标 */
+header li:nth-child(1) img {
+	/* width: 38px; */
+	width: 32px;
+	margin-left: 15px;
+
+}
+
+
+/* 第二行文字 */
+header li:nth-child(2) {
+
+
+	color: #535665;
+	height: 90px;
+	font-size: 38px;
+	vertical-align: middle;
+	align-items: center;
+
+	/* border: 1px solid red; */
+}
+
+
+/* 第二三行图标 */
+header li>img {
+	width: 38px;
+	height: 38px;
+	margin-right: 22px;
+	/* vertical-align: middle; */
+	align-items: center;
+
+	/* border: 1px solid red; */
+}
+
+
+
+/* 第三行文字 */
+header li:nth-child(3) {
+	display: flex;
+	color: #535665;
+	min-height: 85px;
+	font-size: 38px;
+	/* vertical-align: middle; */
+
+
+	/* border: 1px solid red; */
+}
+
+header li:nth-child(3) img {
+	margin-top: 8px;
+}
+
+header li:nth-child(3) textarea {
+	color: #535665;
+	height: 60px;
+	line-height: 1.5;
+	font-size: 38px;
+	width: 700px;
+
+	overflow: hidden;
+	padding: 2px;
+	text-align: left;
+	border: 0;
+	outline: 0 none;
+}
+
+
+
+main {
+	margin: 60px auto;
+	width: 880px;
+	height: 966px;
+	background: url("../img/sysbg.jpg");
+	background-size: 100%;
+	padding: 50px;
+	border-radius: 60px;
+}
+
+main li:nth-child(1) {
+	color: #27282d;
+	font-size: 60px;
+	text-align: left;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+main li:nth-child(2) {
+	color: #535665;
+	font-size: 40px;
+	text-align: left;
+	margin-bottom: 90px;
+}
+
+
+main li:nth-child(3) {
+	color: red;
+	font-size: 56px;
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+main li:nth-child(4) {
+	color: #57ac6b;
+	font-size: 56px;
+	text-align: center;
+}
+
+footer {
+	width: 880px;
+	height: 272px;
+	margin-bottom: 48px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+/* 核酸检测 */
+.b1 {
+	background: url(../img/b1.jpg);
+}
+
+/* 疫苗接种 */
+.b2 {
+	background: url(../img/b2.jpg);
+}
+
+.b1,
+.b2 {
+	width: 426px;
+	height: 272px;
+	background-size: 100%;
+	border-radius: 60px;
+}
