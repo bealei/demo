@@ -22,7 +22,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  # 单一部署作业，因为我们只是在部署
   deploy:
     environment:
       name: github-pages
@@ -34,9 +34,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
-          # Upload entire repository
+          # 上传整个存储库
           path: "."
       - name: Deploy to GitHub Pages
         id: deployment
